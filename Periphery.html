@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="Search.css">
+    <link rel="stylesheet" href="product-details.css">
+    <script defer src="Tovar.js"></script>
+    <script defer src="Search.js"></script>
+    <title>Telemart.UA</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="store-name"><a href="index.html">Telemart<span>.UA</span></a></h1>
+        <nav>
+            <ul class="social-links">
+                <li><a href="cart.html"><img src="Telega.png"></a></li>
+                <li><a href="wishlist.html"><img src="SER.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="price-filter">
+        <label for="min-price">Мінімальна ціна:</label>
+        <input type="number" id="min-price" placeholder="0" step="0.01">
+    
+        <label for="max-price">Максимальна ціна:</label>
+        <input type="number" id="max-price" placeholder="1000" step="0.01">
+    
+        <button onclick="filterProducts()">Застосувати фільтр</button>
+    </div>
+
+    <div id="filters-container">
+        <div id="category-filter">
+            <label>Виберіть категорії:</label>
+
+            <input type="checkbox" id="video_cards_Nvidia" name="category" value="video_cards_Nvidia">
+            <label for="video_cards_Nvidia">Відеокарти Nvidia</label>
+
+            <input type="checkbox" id="Laptops" name="category" value="Laptops">
+            <label for="Laptops">Ноутбуки</label>        
+
+            <input type="checkbox" id="Monitors" name="category" value="Monitors">
+            <label for="Monitors">Монитори</label>
+
+            <input type="checkbox" id="RAM1" name="category" value="RAM1">
+            <label for="RAM1">ОЗП</label>
+
+            <input type="checkbox" id="Periphery" name="category" value="Periphery">
+            <label for="Periphery">Периферія</label>
+
+            <input type="checkbox" id="Motherboards_for_AMD" name="category" value="Motherboards_for_AMD">
+            <label for="Motherboards_for_AMD">Материнські плати AMD</label>
+
+            <input type="checkbox" id="Motherboards_for_Intel" name="category" value="Motherboards_for_Intel">
+            <label for="Motherboards_for_Intel">Материнські плати Intel</label>
+
+            <input type="checkbox" id="video_cards_AMD" name="category" value="video_cards_AMD">
+            <label for="video_cards_AMD">Відеокарти AMD</label>
+
+            <input type="checkbox" id="Processor" name="category" value="Processor">
+            <label for="Processor">Процесори</label>
+        
+            <button onclick="filterProducts()">Фільтрувати</button>
+        </div>
+    </div>
+
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Пошук...">
+        <button type="submit" id="search-button">Пошук</button>
+        <div id="search-feedback"></div>
+        <div id="autocomplete-results"></div>
+      </form>
+
+
+    <div class="Tovar">
+        <ul>
+          <li data-category="Periphery"><a href=""><img src="https://img.telemart.ua/519782-667119-category_page/hator-hypergang-71x-usb-hta-844-black.png">Навушники HATOR Hypergang 7.1X</a></li>
+          <li data-category="Periphery"><a href=""><img src="https://img.telemart.ua/505867-692961-category_page/akko-3084b-plus-rgb-jelly-pink-switches-6925758617345-blackpink.jpg">Клавіатура AKKO 3084B Plus RGB Jelly Pink Switches</a></li>
+          <li data-category="Periphery"><a href=""><img src="https://img.telemart.ua/412438-565600-category_page/razer-deathadder-essential-2021-rz01-03850100-r3m1-black.png">Миша Razer DeathAdder Essential</a></li>
+          <li data-category="Periphery"><a href=""><img src="https://img.telemart.ua/446566-588902-category_page/varmilo-mulan-desk-mat-xl-zdb017-01-black.jpg">Килимок для миші Varmilo Mulan Desk Mat XL</a></li>
+          <li data-category="Periphery"><a href=""><img src="https://img.telemart.ua/421453-570374-category_page/gamesir-t4-pro-black.jpg">Ігровий маніпулятор Gamesir T4 Pro Black</a></li>
+        </ul>
+      </div>
+
+    
+</body>
+
+</html>

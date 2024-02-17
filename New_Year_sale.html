@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="Search.css">
+    <link rel="stylesheet" href="product-details.css">
+    <script defer src="Tovar.js"></script>
+    <script defer src="Search.js"></script>
+    <title>Telemart.UA</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="store-name"><a href="index.html">Telemart<span>.UA</span></a></h1>
+        <nav>
+            <ul class="social-links">
+                <li><a href="cart.html"><img src="Telega.png"></a></li>
+                <li><a href="wishlist.html"><img src="SER.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="price-filter">
+      <label for="min-price">Мінімальна ціна:</label>
+      <input type="number" id="min-price" placeholder="0" step="0.01">
+  
+      <label for="max-price">Максимальна ціна:</label>
+      <input type="number" id="max-price" placeholder="1000" step="0.01">
+  
+      <button onclick="filterProducts()">Застосувати фільтр</button>
+  </div>
+  
+    <div id="filters-container">
+        <div id="category-filter">
+            <label>Виберіть категорії:</label>
+
+            <input type="checkbox" id="video_cards_Nvidia" name="category" value="video_cards_Nvidia">
+            <label for="video_cards_Nvidia">Відеокарти Nvidia</label>
+
+            <input type="checkbox" id="Laptops" name="category" value="Laptops">
+            <label for="Laptops">Ноутбуки</label>        
+
+            <input type="checkbox" id="Monitors" name="category" value="Monitors">
+            <label for="Monitors">Монитори</label>
+
+            <input type="checkbox" id="RAM1" name="category" value="RAM1">
+            <label for="RAM1">ОЗП</label>
+
+            <input type="checkbox" id="Periphery" name="category" value="Periphery">
+            <label for="Periphery">Периферія</label>
+
+            <input type="checkbox" id="Motherboards_for_AMD" name="category" value="Motherboards_for_AMD">
+            <label for="Motherboards_for_AMD">Материнські плати AMD</label>
+
+            <input type="checkbox" id="Motherboards_for_Intel" name="category" value="Motherboards_for_Intel">
+            <label for="Motherboards_for_Intel">Материнські плати Intel</label>
+
+            <input type="checkbox" id="video_cards_AMD" name="category" value="video_cards_AMD">
+            <label for="video_cards_AMD">Відеокарти AMD</label>
+
+            <input type="checkbox" id="Processor" name="category" value="Processor">
+            <label for="Processor">Процесори</label>
+        
+            <button onclick="filterProducts()">Фільтрувати</button>
+        </div>
+    </div>
+
+
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Пошук...">
+        <button type="submit" id="search-button">Пошук</button>
+        <div id="search-feedback"></div>
+        <div id="autocomplete-results"></div>
+      </form>
+
+
+    <div class="Tovar">
+        <ul>
+          <li data-category="video_cards_Nvidia" data-price="500.00"><a href="Video_card.html"><img src="https://img.telemart.ua/516733-663548-category_page/msi-geforce-rtx-4060-ventus-2x-black-oc-8192mb-rtx-4060-ventus-2x-black-8g-oc.png">Відеокарта MSI GeForce RTX 4060 VENTUS 2X BLACK OC 8192MB</a></li>
+          <li data-category="Processor" data-price="250.00"><a href="Processor.html"><img src="https://img.telemart.ua/403292-554709-category_page/intel-core-i5-12400f-2544ghz-18mb-s1700-box-bx8071512400f.png">Процесор Intel Core i5-12400F 2.5(4.4)GHz 18MB s1700 Box</a></li>
+          <li data-category="Motherboards_for_Intel" data-price="150.00"><a href="Motherboard.html"><img src="https://img.telemart.ua/398893-554564-category_page/asus-prime-b660-plus-d4-s1700-intel-b660.png">Материнська плата Asus PRIME B660-PLUS D4 (s1700, Intel B660)</a></li>
+          <li data-category="RAM1" data-price="120.00"><a href="RAM.html"><img src="https://img.telemart.ua/374725-526249-category_page/kingston-ddr4-32gb-2x16gb-3200mhz-fury-beast-black-kf432c16bb1k232.jpg">ОЗП Kingston DDR4 32GB (2x16GB) 3200Mhz FURY Beast Black</a></li>
+          <li data-category="Monitors"><a href=""><img src="https://img.telemart.ua/529220-678970-category_page/asus-27-proart-display-pa278cgv-90lm05l1-b04370-blacksilver.jpg">Монітор Asus 27" ProArt Display</a></li>
+        </ul>
+      </div>
+
+      
+</body>
+
+</html>

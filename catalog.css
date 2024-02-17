@@ -1,0 +1,115 @@
+.catalog {
+    margin: 20px;
+    max-width: 15%;
+    overflow: hidden;
+}
+
+.catalog h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.catalog ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.catalog a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.catalog a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.catalog a:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 0 0 #ddd;
+}
+
+.catalog img {
+    margin-right: 10px;
+    max-width: 50px;
+    height: auto;
+}
+
+/* Зазначте стилі для .mini-window і .mini-window ul */
+.mini-window {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.mini-window ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mini-window li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mini-window li:hover {
+    background-color: #f0f0f0;
+}
+
+
+/*для ширини екрану до 768px */
+@media only screen and (max-width: 768px) {
+    .catalog {
+        max-width: 100%;
+    }
+    
+    .Foto {
+        width: 500px;
+        position: relative; 
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 20px;  
+    }
+}
+
+/*для ширини екрану до 480px */
+@media only screen and (max-width: 480px) {
+    .catalog {
+        max-width: 100%;
+    }
+
+    .catalog h2 {
+        font-size: 1.2em;
+    }
+}

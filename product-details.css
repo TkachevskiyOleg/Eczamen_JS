@@ -1,0 +1,100 @@
+.product-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-info img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.details h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.details p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #45a049;
+}
+
+.characteristics {
+    margin-top: 20px;
+}
+
+.characteristics h4 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.characteristics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.characteristics li {
+    margin-bottom: 10px;
+}
+
+.characteristics li strong {
+    color: #666;
+    margin-right: 10px;
+}
+
+.characteristics li span {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Адаптація для мобільних пристроїв */
+
+@media only screen and (max-width: 600px) {
+    .product-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-info img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

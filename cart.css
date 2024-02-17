@@ -1,0 +1,123 @@
+.cart-tab {
+    margin: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cart-tab h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.checkout-button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
+
+.cart-items li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-items img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cart-items p {
+    margin: 0;
+}
+
+.cart-items a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cart-items a:hover {
+    text-decoration: underline;
+}
+
+.cart-items button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-items button:hover {
+    background-color: #d63716;
+}
+
+/*для ширини екрану до 768px */
+@media only screen and (max-width: 768px) {
+    .cart-tab {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .cart-tab h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .cart-summary {
+        flex-direction: row;  
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/*для ширини екрану до 480px */
+@media only screen and (max-width: 480px) {
+    .cart-tab {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .cart-tab h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .cart-items li {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+}
